@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap");
 @import "tailwindcss";
+@import "@radix-ui/themes/styles.css";
 
 :root {
   --bg-primary: #0a0e1a;
@@ -13,10 +14,10 @@
   --border: rgba(255, 255, 255, 0.08);
 }
 
-* {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
 }
 
 html {

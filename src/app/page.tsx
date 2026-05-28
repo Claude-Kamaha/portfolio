@@ -9,7 +9,7 @@ import Footer from "@/components/Footer";
 export default function Home() {
   return (
     <>
-      <div className="p-8!">
+      <div>
         <Navbar />
         <main>
           <HeroSection />

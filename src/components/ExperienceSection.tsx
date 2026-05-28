@@ -57,7 +57,7 @@ const roleIcons: Record<string, string> = {
 
 export default function ExperienceSection() {
   return (
-    <section id="experience" className="py-24">
+    <section id="experience" className="!py-24">
       <div className="w-full mx-auto px-6">
         {/* Header */}
         <div className="flex flex-col lg:flex-row gap-12 mb-20 items-start">
@@ -68,9 +68,9 @@ export default function ExperienceSection() {
               viewport={{ once: true }}
               className="text-6xl lg:text-7xl font-black leading-tight mb-4"
             >
-              Claude
+              Claude Joelle
               <br />
-              <span className="text-[#4f7aff]">Joelle</span>
+              {/* <span className="text-[#4f7aff]">Joelle</span> */}
             </motion.h2>
             <motion.p
               initial={{ opacity: 0, y: 20 }}
@@ -87,7 +87,7 @@ export default function ExperienceSection() {
                 (tag) => (
                   <span
                     key={tag}
-                    className="px-3 py-1.5 rounded-full text-xs font-semibold border border-white/15 text-slate-300"
+                    className="!px-3 !py-1.5 rounded-full text-xs font-semibold border border-white/15 text-slate-300"
                   >
                     {tag}
                   </span>
@@ -98,7 +98,7 @@ export default function ExperienceSection() {
 
           {/* Stats cards */}
           <div className="flex gap-4">
-            <div className="px-6 py-5 rounded-xl border border-[#4f7aff]/30 bg-[#4f7aff]/10 text-center">
+            <div className="!px-6 !py-5 rounded-xl border border-[#4f7aff]/30 bg-[#4f7aff]/10 text-center">
               <div className="text-2xl font-black text-white mb-1">12+</div>
               <div className="text-xs text-slate-400 max-w-[80px]">
                 Projects Delivered across Fintech &amp; SaaS
@@ -114,7 +114,7 @@ export default function ExperienceSection() {
         </div>
 
         {/* Timeline heading */}
-        <div className="text-center mb-12">
+        <div className="text-center !mb-12 ">
           <h3 className="text-2xl font-bold text-white tracking-tight">
             Professional Trajectory
           </h3>
