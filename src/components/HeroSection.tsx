@@ -1,7 +1,6 @@
 "use client";
 import { Badge } from "@radix-ui/themes";
 import { motion } from "framer-motion";
-import { Badge } from "@radix-ui/themes";
 
 const codeSnippet = `@Component({
   selector: 'architect-root',

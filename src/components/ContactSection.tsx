@@ -5,8 +5,8 @@ import { useState } from "react";
 const contactInfo = [
   {
     icon: "✉",
-    label: "kamahaclaudejoelle@gmail.com",
-    href: "mailto:kamahaclaudejoelle@gmail.com",
+    label: "joellekem97@gmail.com",
+    href: "mailto:joellekem97@gmail.com",
   },
   {
     icon: "⟁",
@@ -26,7 +26,14 @@ export default function ContactSection() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // In production, wire this to an email service
+
+    // Format the email content
+    const subject = `Portfolio Contact from ${form.name}`;
+    const body = `Name: ${form.name}\nEmail: ${form.email}\n\nMessage:\n${form.message}`;
+
+    // Open the user's default email client
+    window.location.href = `mailto:joellekem97@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+
     setSent(true);
     setTimeout(() => setSent(false), 3000);
     setForm({ name: "", email: "", message: "" });

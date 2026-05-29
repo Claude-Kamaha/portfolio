@@ -23,7 +23,7 @@ const tools = {
 export default function SkillsSection() {
   return (
     <section id="skills" className="py-24 border-t border-white/5">
-      <div className="max-w-6xl mx-auto px-6">
+      <div className="mx-auto px-6">
         <div className="grid lg:grid-cols-3 gap-8 items-start">
           {/* Left — heading */}
           <motion.div
