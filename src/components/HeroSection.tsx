@@ -1,17 +1,18 @@
 "use client";
 import { Badge } from "@radix-ui/themes";
 import { motion } from "framer-motion";
+import { Badge } from "@radix-ui/themes";
 
 const codeSnippet = `@Component({
   selector: 'architect-root',
   template: '<joe-flow />'
 })
 
-export class Portfolio {
-  experience$ = of(4.5).pipe(
-    map(years => \`Senior\`)
-  );
-}`;
+  export class Portfolio {
+    experience$ = of(4.5).pipe(
+      map(years => \`Senior\`)
+    );
+  }`;
 
 const coreTech = [
   { name: "Angular", url: "https://angular.dev" },
@@ -28,6 +29,7 @@ const stats = [
   { value: "100%", label: "WEB FOCUS" },
   { value: "∞", label: "CONTINUOUS FLUX" },
 ];
+const MotionBadge = motion(Badge);
 
 export default function HeroSection() {
   return (
@@ -45,7 +47,7 @@ export default function HeroSection() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.1 }}
-              className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-[#4f7aff]/30 bg-[#4f7aff]/10 mb-8"
+              className="inline-flex items-center gap-2 px-4 py-2 rounded mb-8"
             >
               <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
               <span className="text-xs font-semibold tracking-widest text-slate-300 uppercase">
